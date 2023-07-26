@@ -4,7 +4,9 @@
  */
 package calc;
 
+import java.awt.Image;
 import java.awt.Toolkit;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 /**
@@ -18,6 +20,8 @@ public class calculadora extends javax.swing.JFrame {
      */
     public calculadora() {
         initComponents();
+        Image iconImage = new ImageIcon("icon.PNG").getImage();
+        setIconImage(iconImage);
     }
     Double v1, v2;
     String sinal;
